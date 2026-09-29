@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Student Profile</title>
+
+    <!-- Linking CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <main class="profile-card">
+
+        <section class="profile-header">
+            <div class="profile-photo">
+                <span>Your Photo</span>
+            </div>
+
+            <div class="profile-info">
+                <h1 id="studentName">YOUR NAME</h1>
+                <p id="studentDescription">
+                    Small Description about your self
+                </p>
+            </div>
+        </section>
+
+        <section class="education-container">
+            <button class="info-box school-box" onclick="showMessage('Your School')">
+                Your School
+            </button>
+
+            <button class="info-box pu-box" onclick="showMessage('Your PU College')">
+                Your PU<br>College
+            </button>
+
+            <button class="info-box engineering-box" onclick="showMessage('Your Engineering College')">
+                Your<br>Engineering<br>College
+            </button>
+        </section>
+
+        <button class="achievement-box" onclick="showMessage('Your Achievements')">
+            Your<br>Achievements in<br>Lists
+        </button>
+
+        <p id="message"></p>
+    </main>
+
+    <!-- Linking JavaScript -->
+    <script src="script.js"></script>
+
+</body>
+</html>
